@@ -1,10 +1,10 @@
 html {
   scroll-behavior: smooth;
-  font-size: 62.5%;
+  font-size: 62.5%; /* Establece el tamaño base del texto */
 }
 
 body {
-  font-size: var(--font-size-medium); /* Solo se establece font-size */
+  /* Eliminar font-size del body, ya está definido globalmente en :root */
 }
 
 a {
