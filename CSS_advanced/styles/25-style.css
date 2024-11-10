@@ -11,8 +11,8 @@
   --button-hover-background: var(--color-primary);
 }
 
-/* Estilos para el botón */
-button {
+/* Estilos para el botón con clase .button */
+.button {
   display: var(--button-display); /* Establecer el valor de display */
   padding: var(
     --button-padding
@@ -27,8 +27,8 @@ button {
   ); /* Eliminar decoración de texto */
 }
 
-/* Estilo para el estado hover del botón */
-button:hover {
+/* Estilo para el estado hover del botón con clase .button */
+.button:hover {
   color: var(
     --button-hover-color
   ); /* Establecer color de texto al pasar el mouse */
