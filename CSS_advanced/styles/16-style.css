@@ -1,0 +1,8 @@
+/* Estilos previos para .section-tagline */
+
+/* Estilos para la clase .container */
+.container {
+  width: 960px; /* Establece el ancho de 960px */
+  margin-left: auto; /* Distribuye los márgenes de manera uniforme */
+  margin-right: auto; /* Distribuye los márgenes de manera uniforme */
+}
