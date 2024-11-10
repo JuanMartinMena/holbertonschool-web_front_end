@@ -20,16 +20,16 @@
   float: right; /* Deja que el menú de la barra de navegación flote hacia la derecha */
 }
 
-/* Targeting nav class */
-nav {
+/* Targeting .nav class */
+.nav {
   margin: 0; /* Sin márgenes en todos los lados */
   padding: 0; /* Sin relleno en todos los lados */
   text-align: center; /* Centra el texto dentro de nav */
   list-style: none; /* Elimina los estilos predeterminados de la lista */
 }
 
-/* Targeting nav-item class */
-nav .nav-item {
+/* Targeting .nav-item class */
+.nav .nav-item {
   font-family: var(
     --nav-item-font-family
   ); /* Establece la fuente para los elementos de la lista */
@@ -48,14 +48,14 @@ nav .nav-item {
   ); /* Establece los márgenes para los elementos */
 }
 
-/* Targeting nav-link class */
-nav .nav-link {
+/* Targeting .nav-link class */
+.nav .nav-link {
   display: block; /* Hace que el enlace ocupe todo el espacio disponible */
   padding: 0.5rem var(--root); /* Establece el padding (mitad de la raíz para top y bottom, igual al root para left y right) */
 }
 
-/* Hover state for nav-link */
-nav .nav-link:hover {
+/* Hover state for .nav-link */
+.nav .nav-link:hover {
   color: var(
     --nav-item-link-hover
   ); /* Cambia el color de texto cuando se pasa el ratón sobre el enlace */
