@@ -41,9 +41,9 @@ footer ul {
   text-align: right; /* Alineación del texto a la derecha */
 }
 
-/* Crear una nueva fila después de cada clase .row */
-.row + .row {
+/* Crear una nueva fila después de cada .row utilizando el pseudo-elemento ::after */
+.row::after {
   content: ""; /* No contiene ningún contenido */
   display: table; /* Se muestra como una tabla */
-  clear: both; /* No permite elementos flotantes a ninguno de los lados */
+  clear: both; /* No permite elementos flotantes a los lados */
 }
