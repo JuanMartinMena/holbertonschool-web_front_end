@@ -5,25 +5,25 @@
   --nav-item-link-hover: var(--color-white); /* Link hover color */
 }
 
-/* Target the nav-link before pseudo-element */
-nav .nav-link::before {
+/* Target the .nav-link before pseudo-element */
+.nav .nav-link::before {
   content: ""; /* Empty content */
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: absolute; /* Absolute positioning */
+  bottom: 0; /* Position at the bottom */
+  left: 0; /* Position at the left */
   background-color: var(--color-white); /* White background */
-  width: 0;
-  height: 20%; /* 20% of root element height */
+  width: 0; /* Initial width of 0 */
+  height: 0.2rem; /* Height set to 0.2rem */
   transition: all 0.3s ease; /* Smooth transition for hover effect */
 }
 
-/* Target the before pseudo-element of nav-link when nav-item is hovered */
-nav .nav-item:hover .nav-link::before {
+/* Target the before pseudo-element of .nav-link when .nav-item is hovered */
+.nav .nav-item:hover .nav-link::before {
   background-color: var(--color-primary); /* Primary color on hover */
   width: 100%; /* Full width on hover */
 }
 
-/* Add the nav-item-link-hover style */
-.nav-item a:hover {
+/* Add the .nav-item-link-hover style */
+.nav .nav-item a:hover {
   color: var(--nav-item-link-hover); /* Set hover color */
 }
