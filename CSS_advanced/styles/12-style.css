@@ -1,0 +1,49 @@
+/* Definir las propiedades personalizadas (variables CSS) */
+:root {
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+
+  /* Propiedades personalizadas para el título de sección */
+  --section-title-margin: 0; /* Margen para el título de la sección */
+  --section-title-color: var(
+    --color-black
+  ); /* Color para el título de la sección */
+}
+
+/* Nueva declaración para la clase .section-title */
+.section-title {
+  font-family: var(--font-family-title); /* Familia de fuente para el título */
+  font-size: var(--font-size-xx-large); /* Tamaño de fuente para el título */
+  font-weight: var(--font-weight-bold); /* Peso de la fuente en negrita */
+  margin: var(--section-title-margin); /* Usar el margen definido */
+  color: var(--section-title-color); /* Usar el color definido para el texto */
+}
+
+/* Otras reglas de estilo, si es necesario */
+.section-tagline {
+  font-family: var(--font-family-title);
+  font-weight: var(--font-weight-bold);
+  text-transform: var(--section-tagline-transform);
+  color: var(--color-primary);
+}
