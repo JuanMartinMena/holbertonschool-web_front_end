@@ -39,8 +39,8 @@
   ); /* Aplica la alineación con la propiedad section-footer-align */
 }
 
-/* Targeting the footer tag */
-footer {
+/* Targeting the .footer class */
+.footer {
   padding: var(
     --footer-padding
   ); /* Aplica padding con la propiedad footer-padding */
