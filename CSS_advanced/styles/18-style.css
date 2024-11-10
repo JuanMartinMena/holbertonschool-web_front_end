@@ -1,11 +1,15 @@
 /* Propiedades personalizadas (custom properties) */
 :root {
-  --nav-item-font-family: "font-family-title"; /* Fuente para los elementos de la lista */
+  --font-family-title: "Arial", sans-serif; /* Define la fuente si no está definida */
+  --nav-item-font-family: var(
+    --font-family-title
+  ); /* Fuente para los elementos de la lista */
   --nav-item-font-weight: bold; /* Peso de fuente para los elementos de la lista */
   --nav-item-font-size: medium; /* Tamaño de la fuente para los elementos de la lista */
   --nav-item-letter-spacing: 4%; /* Espaciado entre las letras para los elementos de la lista */
   --nav-item-display: inline-block; /* Muestra los elementos de la lista en línea */
   --nav-item-margin: 0 0 3rem 0; /* Margen para los elementos de la lista */
+  --color-primary: #3498db; /* Color principal */
   --nav-item-link-hover: var(
     --color-primary
   ); /* Color del enlace cuando se pasa el ratón sobre él */
@@ -21,6 +25,7 @@ nav {
   margin: 0; /* Sin márgenes en todos los lados */
   padding: 0; /* Sin relleno en todos los lados */
   text-align: center; /* Centra el texto dentro de nav */
+  list-style: none; /* Elimina los estilos predeterminados de la lista */
 }
 
 /* Targeting nav-item class */
