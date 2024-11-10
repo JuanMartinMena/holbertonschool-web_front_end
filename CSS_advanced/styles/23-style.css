@@ -1,0 +1,18 @@
+/* Estilo para la clase footer-address */
+.footer-address {
+  color: var(
+    --text-color
+  ); /* Establecer color de texto usando la variable text-color */
+}
+
+/* Estilo para la clase social-link */
+.social-link {
+  display: block; /* Establecer que el enlace se muestre como un bloque */
+}
+
+/* Estilo para los svg dentro de la clase social-link */
+.social-link svg {
+  fill: var(
+    --text-color
+  ); /* Rellenar los svg hijos con el color de texto de la variable text-color */
+}
