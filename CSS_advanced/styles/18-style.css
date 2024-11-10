@@ -1,62 +1,47 @@
 /* Propiedades personalizadas (custom properties) */
 :root {
-  --font-family-title: "Arial", sans-serif; /* Define la fuente si no está definida */
-  --nav-item-font-family: var(
-    --font-family-title
-  ); /* Fuente para los elementos de la lista */
-  --nav-item-font-weight: bold; /* Peso de fuente para los elementos de la lista */
-  --nav-item-font-size: medium; /* Tamaño de la fuente para los elementos de la lista */
-  --nav-item-letter-spacing: 4%; /* Espaciado entre las letras para los elementos de la lista */
-  --nav-item-display: inline-block; /* Muestra los elementos de la lista en línea */
-  --nav-item-margin: 0 0 3rem 0; /* Margen para los elementos de la lista */
-  --color-primary: #3498db; /* Color principal */
-  --nav-item-link-hover: var(
-    --color-primary
-  ); /* Color del enlace cuando se pasa el ratón sobre él */
+  --root: 1rem; /* Establece el valor raíz como 1rem (ajusta según sea necesario) */
+  --font-family-title: "Arial", sans-serif;
+  --nav-item-font-family: var(--font-family-title);
+  --nav-item-font-weight: bold;
+  --nav-item-font-size: medium;
+  --nav-item-letter-spacing: 4%;
+  --nav-item-display: inline-block;
+  --nav-item-margin: 0 0 3rem 0;
+  --color-primary: #3498db;
+  --nav-item-link-hover: var(--color-primary);
 }
 
 /* Targeting .navbar-menu class */
 .navbar-menu {
-  float: right; /* Deja que el menú de la barra de navegación flote hacia la derecha */
+  float: right;
 }
 
 /* Targeting .nav class */
 .nav {
-  margin: 0; /* Sin márgenes en todos los lados */
-  padding: 0; /* Sin relleno en todos los lados */
-  text-align: center; /* Centra el texto dentro de nav */
-  list-style: none; /* Elimina los estilos predeterminados de la lista */
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  list-style: none;
 }
 
 /* Targeting .nav-item class */
 .nav .nav-item {
-  font-family: var(
-    --nav-item-font-family
-  ); /* Establece la fuente para los elementos de la lista */
-  font-weight: var(
-    --nav-item-font-weight
-  ); /* Establece el peso de la fuente para los elementos de la lista */
-  font-size: var(
-    --nav-item-font-size
-  ); /* Establece el tamaño de la fuente para los elementos de la lista */
-  letter-spacing: var(
-    --nav-item-letter-spacing
-  ); /* Establece el espaciado entre letras */
-  display: var(--nav-item-display); /* Muestra los elementos en línea */
-  margin: var(
-    --nav-item-margin
-  ); /* Establece los márgenes para los elementos */
+  font-family: var(--nav-item-font-family);
+  font-weight: var(--nav-item-font-weight);
+  font-size: var(--nav-item-font-size);
+  letter-spacing: var(--nav-item-letter-spacing);
+  display: var(--nav-item-display);
+  margin: var(--nav-item-margin);
 }
 
 /* Targeting .nav-link class */
 .nav .nav-link {
-  display: block; /* Hace que el enlace ocupe todo el espacio disponible */
-  padding: 0.5rem var(--root); /* Establece el padding (mitad de la raíz para top y bottom, igual al root para left y right) */
+  display: block;
+  padding: calc(var(--root) / 2) var(--root); /* La mitad de la raíz para top y bottom, root completo para left y right */
 }
 
 /* Hover state for .nav-link */
 .nav .nav-link:hover {
-  color: var(
-    --nav-item-link-hover
-  ); /* Cambia el color de texto cuando se pasa el ratón sobre el enlace */
+  color: var(--nav-item-link-hover);
 }
