@@ -54,8 +54,3 @@ h6 {
     --font-family-title
   ); /* Set font-family for all heading levels */
 }
-
-/* Set font size for the html element to 62.5% of its normal size */
-html {
-  font-size: 62.5%;
-}
