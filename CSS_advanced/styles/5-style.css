@@ -4,7 +4,9 @@ html {
 }
 
 body {
-  /* Eliminar font-size del body, ya está definido globalmente en :root */
+  font-size: var(
+    --font-size-medium
+  ); /* Se mantiene el tamaño, pero sin conflicto */
 }
 
 a {
