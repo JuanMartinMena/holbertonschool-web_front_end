@@ -1,0 +1,27 @@
+/* Define custom properties (CSS variables) on the root element */
+:root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black); /* Setting text-color to color-black */
+}
+
+/* Revisit and reset the color of .section-tagline and .card-category to color-primary */
+.section-tagline {
+  color: var(--color-primary);
+}
+
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Revisit and reset the color of body and anchor elements to text-color */
+body {
+  color: var(--text-color);
+}
+
+a {
+  color: var(--text-color);
+}
