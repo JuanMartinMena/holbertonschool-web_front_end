@@ -39,7 +39,7 @@
   ); /* Aplica la alineación con la propiedad section-footer-align */
 }
 
-/* Targeting class footer */
+/* Targeting the footer tag */
 footer {
   padding: var(
     --footer-padding
