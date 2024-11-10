@@ -4,9 +4,7 @@ html {
 }
 
 body {
-  font-size: var(
-    --font-size-medium
-  ); /* Sólo establece el tamaño de la fuente */
+  font-size: var(--font-size-medium); /* Solo se establece font-size */
 }
 
 a {
