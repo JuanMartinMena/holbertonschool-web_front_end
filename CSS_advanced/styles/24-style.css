@@ -1,0 +1,24 @@
+/* Estilo para card-title dentro de card-services */
+.card-services .card-title {
+  margin: 0; /* Eliminar márgenes en todos los lados */
+}
+
+/* Estilo para el enlace a dentro de card-services */
+.card-services a {
+  display: block; /* Establecer que el enlace sea un elemento de bloque */
+  padding: 2rem; /* Establecer el padding a 2 veces el tamaño de la raíz */
+  background-color: var(
+    --color-light-grey
+  ); /* Establecer el color de fondo a la variable color-light-grey */
+}
+
+/* Estilo para el estado hover del enlace dentro de card-services */
+.card-services a:hover {
+  color: var(
+    --color-white
+  ); /* Establecer el color de primer plano al color blanco */
+  background-color: var(
+    --color-primary
+  ); /* Establecer el color de fondo al color primario */
+  text-decoration: none; /* Eliminar la decoración del texto (como subrayado) */
+}
