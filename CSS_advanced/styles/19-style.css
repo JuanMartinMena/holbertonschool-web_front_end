@@ -13,8 +13,8 @@
   ); /* Aplica el margen definido en --section-tagline-margin */
 }
 
-/* Targeting ul with class .row */
-.row {
+/* Asegurándonos de seleccionar correctamente ul con la clase .row */
+ul.row {
   margin: 0; /* Elimina el margen */
   padding: 0; /* Elimina el padding */
   list-style: none; /* Elimina los estilos predeterminados */
