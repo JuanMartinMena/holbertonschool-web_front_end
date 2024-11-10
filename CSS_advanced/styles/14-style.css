@@ -1,0 +1,24 @@
+/* Normalizando estilos para consistencia entre navegadores */
+@import url("normalize.css"); /* Asegúrate de que el archivo normalize.css esté en el mismo directorio o usa la ruta adecuada */
+
+/* A continuación, agrega tus estilos personalizados */
+
+a[href] {
+  text-decoration: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  font-style: italic;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+a:active {
+  background-color: var(--color-light-grey);
+}
