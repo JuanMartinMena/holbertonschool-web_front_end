@@ -1,0 +1,44 @@
+/* Definir las propiedades personalizadas (variables CSS) si no están definidas anteriormente */
+:root {
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
+
+  --font-weight-regular: 400;
+  --font-weight-bold: 700;
+
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --line-height-small: 1.2;
+  --line-height-base: 1.5;
+  --line-height-big: 1.8;
+
+  /* Nueva propiedad personalizada para la transformación de texto */
+  --section-tagline-transform: uppercase; /* Transformación del texto a mayúsculas */
+}
+
+/* Estilo para la clase .section-tagline */
+.section-tagline {
+  font-family: var(--font-family-title); /* Familia de fuente de los títulos */
+  font-weight: var(--font-weight-bold); /* Peso de la fuente a bold */
+  text-transform: var(
+    --section-tagline-transform
+  ); /* Aplicar la transformación a mayúsculas */
+  color: var(--color-primary); /* Color de texto, si es necesario */
+}
+
+/* Otras reglas de estilo */
+.section-header {
+  text-align: var(--section-header-align); /* Alineación centrada */
+}
