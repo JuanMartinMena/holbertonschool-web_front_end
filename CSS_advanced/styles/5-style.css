@@ -1,23 +1,30 @@
-/* Definir propiedades personalizadas (variables CSS) en el selector root */
+/* Define custom properties (CSS variables) on the root element */
 :root {
-  --font-size-small: 1.2rem; /* 12px */
-  --font-size-medium: 1.6rem; /* 16px */
-  --font-size-large: 1.8rem; /* 18px */
-  --font-size-x-large: 2.3rem; /* 23px */
-  --font-size-xx-large: 4.8rem; /* 48px */
-
-  /* Otras variables ya definidas */
   --color-primary: #d73953;
   --color-black: #090909;
   --color-white: #ffffff;
   --color-light-grey: #f3f3f3;
   --color-dark-grey: #353535;
-  --text-color: var(--color-black);
+  --text-color: var(--color-black); /* Setting text-color to color-black */
+
+  /* Variables for font families */
   --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Custom font size properties */
+  --font-size-small: 1.2rem;
+  --font-size-medium: 1.6rem;
+  --font-size-large: 1.8rem;
+  --font-size-x-large: 2.3rem;
+  --font-size-xx-large: 4.8rem;
 }
 
-/* Revisitamos y reiniciamos el color de .section-tagline y .card-category a color-primary */
+/* Set html font size to 62.5% of normal size */
+html {
+  font-size: 62.5%; /* This sets the base font size to 62.5% of the default */
+}
+
+/* Revisit and reset the color of .section-tagline and .card-category to color-primary */
 .section-tagline {
   color: var(--color-primary);
 }
@@ -26,49 +33,29 @@
   color: var(--color-primary);
 }
 
-/* Establecer tamaño base para el body */
+/* Revisit and reset the color of body and anchor elements to text-color */
 body {
   color: var(--text-color);
-  font-family: var(--font-family-base); /* Fuente base */
-  font-size: 10px; /* 1 rem = 10px */
+  font-family: var(
+    --font-family-base
+  ); /* Set body's font-family to font-family-base */
+  font-size: var(
+    --font-size-medium
+  ); /* Set font size for body to font-size-medium */
 }
 
-/* Establecer el tamaño de fuente para los enlaces */
 a {
   color: var(--text-color);
 }
 
-/* Establecer la fuente para todos los encabezados (h1 a h6) */
+/* Set font-family for all heading tags (h1 to h6) to font-family-title */
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-family-title); /* Fuente para los encabezados */
-}
-
-/* Aplicar tamaños específicos usando las variables */
-h1 {
-  font-size: var(--font-size-xx-large); /* Usando font-size-xx-large */
-}
-
-h2 {
-  font-size: var(--font-size-x-large); /* Usando font-size-x-large */
-}
-
-h3 {
-  font-size: var(--font-size-large); /* Usando font-size-large */
-}
-
-h4 {
-  font-size: var(--font-size-medium); /* Usando font-size-medium */
-}
-
-h5 {
-  font-size: var(--font-size-medium); /* Usando font-size-medium */
-}
-
-h6 {
-  font-size: var(--font-size-small); /* Usando font-size-small */
+  font-family: var(
+    --font-family-title
+  ); /* Set font-family for all heading levels */
 }
