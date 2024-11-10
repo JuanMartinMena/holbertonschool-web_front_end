@@ -10,9 +10,9 @@
   display: block; /* Establecer que el enlace se muestre como un bloque */
 }
 
-/* Estilo para los svg dentro de la clase social-link */
+/* Estilo para los svg dentro de cualquier social-link */
 .social-link svg {
   fill: var(
     --text-color
-  ); /* Rellenar los svg hijos con el color de texto de la variable text-color */
+  ); /* Rellenar los svg con el color de texto de la variable text-color */
 }
