@@ -1,0 +1,19 @@
+/* Asegurarse de que los estilos solo se apliquen a los enlaces que contienen un hipervínculo */
+a[href] {
+  text-decoration: none; /* Eliminar el subrayado por defecto */
+}
+
+/* Estilo para el estado visited (enlace visitado) */
+a[href]:visited {
+  font-style: italic; /* Texto en cursiva */
+}
+
+/* Estilo para el estado hover (cuando el usuario pasa el cursor sobre el enlace) */
+a[href]:hover {
+  text-decoration: underline; /* Subrayar el texto al pasar el cursor */
+}
+
+/* Estilo para el estado active (cuando el enlace está activado, por ejemplo, al hacer clic) */
+a[href]:active {
+  background-color: var(--color-light-grey); /* Fondo gris claro */
+}
