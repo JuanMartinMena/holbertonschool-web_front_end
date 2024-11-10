@@ -1,0 +1,48 @@
+/* Añadir las propiedades personalizadas al selector raíz */
+:root {
+  --button-display: inline-block;
+  --button-padding: 1.5rem 3rem;
+  --button-border: 0.2rem solid var(--color-primary);
+  --button-color: var(--color-black);
+  --button-text-decoration: none;
+  --button-font-size: var(--font-size-large);
+  --button-hover-color: var(--color-white);
+  --button-hover-text-decoration: none;
+  --button-hover-background: var(--color-primary);
+}
+
+/* Estilos para el botón */
+button {
+  display: var(--button-display); /* Establecer el valor de display */
+  padding: var(
+    --button-padding
+  ); /* Añadir padding con las variables personalizadas */
+  border: var(
+    --button-border
+  ); /* Establecer borde con la variable personalizada */
+  font-size: var(--button-font-size); /* Establecer tamaño de fuente */
+  color: var(--button-color); /* Establecer color del texto */
+  text-decoration: var(
+    --button-text-decoration
+  ); /* Eliminar decoración de texto */
+}
+
+/* Estilo para el estado hover del botón */
+button:hover {
+  color: var(
+    --button-hover-color
+  ); /* Establecer color de texto al pasar el mouse */
+  text-decoration: var(
+    --button-hover-text-decoration
+  ); /* Eliminar decoración de texto en hover */
+  background-color: var(
+    --button-hover-background
+  ); /* Establecer el fondo en hover */
+}
+
+/* Para el tema oscuro, redefinir el color del botón */
+[data-section-theme="dark"] {
+  --button-color: var(
+    --color-white
+  ); /* Establecer el color del botón a blanco en el tema oscuro */
+}
