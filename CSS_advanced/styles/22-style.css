@@ -1,17 +1,17 @@
 /* Seleccionar el atributo data-section-theme="dark" */
 [data-section-theme="dark"] {
-  --text-color: white; /* Redefinir el color del texto a blanco */
-  --section-title-color: white; /* Redefinir el color del título de la sección a blanco */
-  background: var(
-    --color-black
-  ); /* Establecer el fondo al valor de la variable color-black */
+  --text-color: white; /* Establecer color blanco para el texto */
+  --section-title-color: white; /* Establecer color blanco para el título de la sección */
+  background: black; /* Establecer el fondo como negro */
 }
 
-/* Si también necesitas aplicar los colores a los elementos específicos dentro del tema dark */
+/* Aplicar las variables a los elementos dentro de data-section-theme="dark" */
 [data-section-theme="dark"] p {
-  color: var(--text-color);
+  color: var(--text-color); /* Aplicar el color de texto blanco */
 }
 
 [data-section-theme="dark"] h2 {
-  color: var(--section-title-color);
+  color: var(
+    --section-title-color
+  ); /* Aplicar el color del título de la sección blanco */
 }
