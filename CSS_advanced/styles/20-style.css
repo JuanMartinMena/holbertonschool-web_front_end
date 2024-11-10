@@ -1,0 +1,6 @@
+/* Crear una nueva fila después de cada clase .row */
+.row + .row {
+  content: ""; /* No contiene ningún contenido */
+  display: table; /* Se muestra como una tabla */
+  clear: both; /* No permite elementos flotantes a ninguno de los lados */
+}
