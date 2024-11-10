@@ -1,0 +1,43 @@
+/* Create custom properties */
+:root {
+  --transition-duration: 0.3s;
+  --transition-cubic-bezier: cubic-bezier(0.17, 0.67, 0, 1.01);
+}
+
+/* Transformations on card-work */
+
+/* Target the card-image when card-work is hovered */
+.card-work:hover .card-image {
+  transform: scale(1.2); /* Scale transform to enlarge the image */
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition with custom duration and cubic bezier */
+}
+
+/* Target the card-outer when card-work is hovered */
+.card-work:hover .card-outer {
+  transform: scale(0.95); /* Scale transform to shrink the card-outer */
+}
+
+/* Animations on navigation items */
+
+/* Inside .nav .nav-link::before */
+.nav .nav-link::before {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition for the before pseudo-element */
+}
+
+/* Animate the button background */
+.button:hover {
+  transition-duration: var(--transition-duration); /* Transition duration */
+  transition-property: color, background-color; /* Apply to color and background-color */
+}
+
+/* Transitions on the card-work */
+
+/* Inside card-work:hover .card-image */
+.card-work:hover .card-image {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition for card-image */
+}
+
+/* Inside .card-work .card-inner */
+.card-work .card-inner {
+  transition: var(--transition-duration) var(--transition-cubic-bezier); /* Transition for card-inner */
+}
