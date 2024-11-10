@@ -1,0 +1,91 @@
+/* Definir propiedades personalizadas (variables CSS) en el selector root */
+:root {
+  --font-size-small: 1.2rem; /* 12px */
+  --font-size-medium: 1.6rem; /* 16px */
+  --font-size-large: 1.8rem; /* 18px */
+  --font-size-x-large: 2.3rem; /* 23px */
+  --font-size-xx-large: 4.8rem; /* 48px */
+
+  /* Propiedades personalizadas para font-weight */
+  --font-weight-regular: 400; /* Peso de fuente regular */
+  --font-weight-bold: 700; /* Peso de fuente en negrita */
+
+  /* Otras variables ya definidas */
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black);
+
+  /* Agregar Open Sans como la primera opción para font-family-base */
+  --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+
+  /* Agregar Raleway como la primera opción para font-family-title */
+  --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Revisitamos y reiniciamos el color de .section-tagline y .card-category a color-primary */
+.section-tagline {
+  color: var(--color-primary);
+}
+
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Establecer tamaño base para el body */
+body {
+  color: var(--text-color);
+  font-family: var(
+    --font-family-base
+  ); /* Fuente base con Open Sans como la primera opción */
+  font-size: 10px; /* 1 rem = 10px */
+  font-weight: var(--font-weight-regular); /* Peso regular para el body */
+}
+
+/* Establecer el tamaño de fuente para los enlaces */
+a {
+  color: var(--text-color);
+}
+
+/* Establecer la fuente para todos los encabezados (h1 a h6) usando la variable font-family */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(
+    --font-family-title
+  ); /* Asegurar que todos usen la variable, con Raleway como la primera opción */
+  font-weight: var(
+    --font-weight-bold
+  ); /* Peso en negrita para los encabezados */
+}
+
+/* Aplicar tamaños específicos usando las variables */
+h1 {
+  font-size: var(--font-size-xx-large); /* Usando font-size-xx-large */
+}
+
+h2 {
+  font-size: var(--font-size-x-large); /* Usando font-size-x-large */
+}
+
+h3 {
+  font-size: var(--font-size-large); /* Usando font-size-large */
+}
+
+h4 {
+  font-size: var(--font-size-medium); /* Usando font-size-medium */
+}
+
+h5 {
+  font-size: var(--font-size-medium); /* Usando font-size-medium */
+}
+
+h6 {
+  font-size: var(--font-size-small); /* Usando font-size-small */
+}
