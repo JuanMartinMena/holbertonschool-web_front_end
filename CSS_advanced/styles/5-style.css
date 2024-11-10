@@ -55,7 +55,7 @@ h6 {
   ); /* Set font-family for all heading levels */
 }
 
-/* Set font size for the html element to 62.5% of its normal size */
-html {
+/* Set font size for the body element to 62.5% of its normal size */
+body {
   font-size: 62.5%;
 }
