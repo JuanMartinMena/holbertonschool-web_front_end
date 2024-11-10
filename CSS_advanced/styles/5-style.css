@@ -1,5 +1,17 @@
-/* Define custom font-size properties on the root element */
+/* Define custom properties (CSS variables) on the root element */
 :root {
+  --color-primary: #d73953;
+  --color-black: #090909;
+  --color-white: #ffffff;
+  --color-light-grey: #f3f3f3;
+  --color-dark-grey: #353535;
+  --text-color: var(--color-black); /* Setting text-color to color-black */
+
+  /* Variables for font families */
+  --font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-family-title: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  /* Variables for font sizes */
   --font-size-small: 1.2rem;
   --font-size-medium: 1.6rem;
   --font-size-large: 1.8rem;
@@ -7,12 +19,43 @@
   --font-size-xx-large: 4.8rem;
 }
 
-/* Set font size of html element to 62.5% of its normal size (which is 10px = 1rem) */
-html {
-  font-size: 62.5%; /* 10px = 1rem */
+/* Revisit and reset the color of .section-tagline and .card-category to color-primary */
+.section-tagline {
+  color: var(--color-primary);
 }
 
-/* Set font size of body to font-size-medium */
+.card-category {
+  color: var(--color-primary);
+}
+
+/* Revisit and reset the color of body and anchor elements to text-color */
 body {
-  font-size: var(--font-size-medium);
+  color: var(--text-color);
+  font-family: var(
+    --font-family-base
+  ); /* Set body's font-family to font-family-base */
+  font-size: var(
+    --font-size-medium
+  ); /* Set body's font-size to font-size-medium */
+}
+
+a {
+  color: var(--text-color);
+}
+
+/* Set font-family for all heading tags (h1 to h6) to font-family-title */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(
+    --font-family-title
+  ); /* Set font-family for all heading levels */
+}
+
+/* Set font size for the html element to 62.5% of its normal size */
+html {
+  font-size: 62.5%;
 }
