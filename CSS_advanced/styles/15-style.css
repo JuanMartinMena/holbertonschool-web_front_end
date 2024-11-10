@@ -1,0 +1,13 @@
+/* Establecer el box-sizing a border-box para todos los elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Aquí van los estilos para el html */
+html {
+  font-size: 62.5%;
+}
+
+/* Resto de estilos para el archivo */
