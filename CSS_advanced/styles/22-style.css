@@ -6,3 +6,12 @@
     --color-black
   ); /* Establecer el fondo al valor de la variable color-black */
 }
+
+/* Si también necesitas aplicar los colores a los elementos específicos dentro del tema dark */
+[data-section-theme="dark"] p {
+  color: var(--text-color);
+}
+
+[data-section-theme="dark"] h2 {
+  color: var(--section-title-color);
+}
