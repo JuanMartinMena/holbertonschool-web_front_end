@@ -1,0 +1,47 @@
+/* Propiedades personalizadas (custom properties) */
+:root {
+  --section-padding: 5rem 0;
+  --section-header-padding: 0 0 3rem;
+  --section-body-padding: 0 0 3rem;
+  --section-footer-padding: 3rem 0 0;
+  --section-footer-align: center;
+  --footer-padding: 5rem 0 1rem;
+}
+
+/* Targeting class .section */
+.section {
+  padding: var(
+    --section-padding
+  ); /* Aplica padding con la propiedad section-padding */
+}
+
+/* Targeting class .section-header */
+.section-header {
+  padding: var(
+    --section-header-padding
+  ); /* Aplica padding con la propiedad section-header-padding */
+}
+
+/* Targeting class .section-body */
+.section-body {
+  padding: var(
+    --section-body-padding
+  ); /* Aplica padding con la propiedad section-body-padding */
+}
+
+/* Targeting class .section-footer */
+.section-footer {
+  padding: var(
+    --section-footer-padding
+  ); /* Aplica padding con la propiedad section-footer-padding */
+  text-align: var(
+    --section-footer-align
+  ); /* Aplica la alineación con la propiedad section-footer-align */
+}
+
+/* Targeting class footer */
+footer {
+  padding: var(
+    --footer-padding
+  ); /* Aplica padding con la propiedad footer-padding */
+}
